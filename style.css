@@ -116,3 +116,12 @@ section{margin-top:64px}.hero{margin-top:24px}
 @media(max-width:700px){section{margin-top:48px}.panel.dark{padding:32px 20px}.panel.contact{padding:32px 20px}.group{font-size:28px}.page{padding-bottom:32px}}
 @media(prefers-reduced-motion:reduce){.panel.dark{background-image:none}}
 .hero{background-color:var(--ink-dark)}
+
+/* Modo retro */
+.portfolio-nav .retro-link{margin-left:auto;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;letter-spacing:.04em;color:#0b3d00;background:#9aff72;border-radius:8px;padding:0 12px;min-height:36px;align-self:center;font-weight:700;box-shadow:0 0 0 0 #71ff4c66;animation:retro-pulse 2.6s ease-in-out infinite}
+.portfolio-nav .retro-link::after{display:none}.portfolio-nav .retro-link:hover{color:#0b3d00;box-shadow:0 0 14px 2px #71ff4c99}
+.retro-hero{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:#9aff72!important;text-shadow:0 0 8px #71ff4c88}
+.retro-foot{display:inline-block;margin-bottom:10px;font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--ds-ink);font-weight:700}
+@keyframes retro-pulse{0%,100%{box-shadow:0 0 0 0 #71ff4c55}50%{box-shadow:0 0 12px 3px #71ff4c88}}
+@media(max-width:700px){.portfolio-nav .retro-link{margin-left:0}}
+@media(prefers-reduced-motion:reduce){.portfolio-nav .retro-link{animation:none}}
